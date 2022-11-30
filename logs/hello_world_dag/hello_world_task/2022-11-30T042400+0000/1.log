@@ -1,0 +1,22 @@
+[2022-11-30 04:25:01,586] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: hello_world_dag.hello_world_task scheduled__2022-11-30T04:24:00+00:00 [queued]>
+[2022-11-30 04:25:01,596] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: hello_world_dag.hello_world_task scheduled__2022-11-30T04:24:00+00:00 [queued]>
+[2022-11-30 04:25:01,596] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30 04:25:01,596] {taskinstance.py:1244} INFO - Starting attempt 1 of 4
+[2022-11-30 04:25:01,596] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30 04:25:01,608] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): hello_world_task> on 2022-11-30 04:24:00+00:00
+[2022-11-30 04:25:01,611] {standard_task_runner.py:52} INFO - Started process 2179 to run task
+[2022-11-30 04:25:01,615] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'hello_world_dag', 'hello_world_task', 'scheduled__2022-11-30T04:24:00+00:00', '--job-id', '1318', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp5_oj1ua6', '--error-file', '/tmp/tmpvnetbt_a']
+[2022-11-30 04:25:01,615] {standard_task_runner.py:77} INFO - Job 1318: Subtask hello_world_task
+[2022-11-30 04:25:01,671] {logging_mixin.py:109} INFO - Running <TaskInstance: hello_world_dag.hello_world_task scheduled__2022-11-30T04:24:00+00:00 [running]> on host acb48b0a6e0d
+[2022-11-30 04:25:01,727] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Ranga
+AIRFLOW_CTX_DAG_ID=hello_world_dag
+AIRFLOW_CTX_TASK_ID=hello_world_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-30T04:24:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-30T04:24:00+00:00
+[2022-11-30 04:25:01,727] {python.py:175} INFO - Done. Returned value was: Hello World!
+[2022-11-30 04:25:01,750] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=hello_world_dag, task_id=hello_world_task, execution_date=20221130T042400, start_date=20221130T042501, end_date=20221130T042501
+[2022-11-30 04:25:01,786] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-30 04:25:01,818] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

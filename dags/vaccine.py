@@ -125,7 +125,7 @@ dag_pandas = DAG(
   dag_id = "vaccine_dags",
   default_args=default_args ,
   # schedule_interval='0 0 * * *',
-  schedule_interval='@once',	
+  schedule_interval='@daily',	
   dagrun_timeout=timedelta(minutes=60),
   description='use case of pandas  in airflow',
   start_date = days_ago(1))
