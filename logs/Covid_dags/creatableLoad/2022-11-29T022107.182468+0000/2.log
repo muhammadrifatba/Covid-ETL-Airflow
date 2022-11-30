@@ -1,0 +1,22 @@
+[2022-11-29 02:26:12,771] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Covid_dags.creatableLoad manual__2022-11-29T02:21:07.182468+00:00 [queued]>
+[2022-11-29 02:26:12,779] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Covid_dags.creatableLoad manual__2022-11-29T02:21:07.182468+00:00 [queued]>
+[2022-11-29 02:26:12,779] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29 02:26:12,779] {taskinstance.py:1244} INFO - Starting attempt 2 of 2
+[2022-11-29 02:26:12,779] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29 02:26:12,790] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): creatableLoad> on 2022-11-29 02:21:07.182468+00:00
+[2022-11-29 02:26:12,794] {standard_task_runner.py:52} INFO - Started process 913 to run task
+[2022-11-29 02:26:12,797] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Covid_dags', 'creatableLoad', 'manual__2022-11-29T02:21:07.182468+00:00', '--job-id', '882', '--raw', '--subdir', 'DAGS_FOLDER/dbtest.py', '--cfg-path', '/tmp/tmp4miwc3ft', '--error-file', '/tmp/tmptboy7tns']
+[2022-11-29 02:26:12,797] {standard_task_runner.py:77} INFO - Job 882: Subtask creatableLoad
+[2022-11-29 02:26:12,837] {logging_mixin.py:109} INFO - Running <TaskInstance: Covid_dags.creatableLoad manual__2022-11-29T02:21:07.182468+00:00 [running]> on host acb48b0a6e0d
+[2022-11-29 02:26:12,874] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Covid_dags
+AIRFLOW_CTX_TASK_ID=creatableLoad
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-29T02:21:07.182468+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-29T02:21:07.182468+00:00
+[2022-11-29 02:26:13,011] {python.py:175} INFO - Done. Returned value was: None
+[2022-11-29 02:26:13,019] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=Covid_dags, task_id=creatableLoad, execution_date=20221129T022107, start_date=20221129T022612, end_date=20221129T022613
+[2022-11-29 02:26:13,051] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-29 02:26:13,072] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

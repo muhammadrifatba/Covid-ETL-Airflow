@@ -1,0 +1,22 @@
+[2022-11-29 01:59:57,459] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Covid_dags.transformData manual__2022-11-29T01:59:36.890668+00:00 [queued]>
+[2022-11-29 01:59:57,465] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Covid_dags.transformData manual__2022-11-29T01:59:36.890668+00:00 [queued]>
+[2022-11-29 01:59:57,466] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29 01:59:57,466] {taskinstance.py:1244} INFO - Starting attempt 1 of 2
+[2022-11-29 01:59:57,466] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29 01:59:57,474] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): transformData> on 2022-11-29 01:59:36.890668+00:00
+[2022-11-29 01:59:57,478] {standard_task_runner.py:52} INFO - Started process 764 to run task
+[2022-11-29 01:59:57,480] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Covid_dags', 'transformData', 'manual__2022-11-29T01:59:36.890668+00:00', '--job-id', '806', '--raw', '--subdir', 'DAGS_FOLDER/dbtest.py', '--cfg-path', '/tmp/tmpotu4k102', '--error-file', '/tmp/tmpnpksgtci']
+[2022-11-29 01:59:57,480] {standard_task_runner.py:77} INFO - Job 806: Subtask transformData
+[2022-11-29 01:59:57,522] {logging_mixin.py:109} INFO - Running <TaskInstance: Covid_dags.transformData manual__2022-11-29T01:59:36.890668+00:00 [running]> on host acb48b0a6e0d
+[2022-11-29 01:59:57,647] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Covid_dags
+AIRFLOW_CTX_TASK_ID=transformData
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-29T01:59:36.890668+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-29T01:59:36.890668+00:00
+[2022-11-29 01:59:57,717] {python.py:175} INFO - Done. Returned value was: None
+[2022-11-29 01:59:57,725] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=Covid_dags, task_id=transformData, execution_date=20221129T015936, start_date=20221129T015957, end_date=20221129T015957
+[2022-11-29 01:59:57,772] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-29 01:59:57,795] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

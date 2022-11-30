@@ -1,0 +1,22 @@
+[2022-11-28 19:06:19,214] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: using_pandas_demo.getDataToLocal manual__2022-11-28T19:01:17.221697+00:00 [queued]>
+[2022-11-28 19:06:19,224] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: using_pandas_demo.getDataToLocal manual__2022-11-28T19:01:17.221697+00:00 [queued]>
+[2022-11-28 19:06:19,225] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-28 19:06:19,225] {taskinstance.py:1244} INFO - Starting attempt 2 of 2
+[2022-11-28 19:06:19,225] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-28 19:06:19,238] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): getDataToLocal> on 2022-11-28 19:01:17.221697+00:00
+[2022-11-28 19:06:19,242] {standard_task_runner.py:52} INFO - Started process 519 to run task
+[2022-11-28 19:06:19,246] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'using_pandas_demo', 'getDataToLocal', 'manual__2022-11-28T19:01:17.221697+00:00', '--job-id', '403', '--raw', '--subdir', 'DAGS_FOLDER/dbtest.py', '--cfg-path', '/tmp/tmpz12b83a4', '--error-file', '/tmp/tmpq_rge3ok']
+[2022-11-28 19:06:19,247] {standard_task_runner.py:77} INFO - Job 403: Subtask getDataToLocal
+[2022-11-28 19:06:19,309] {logging_mixin.py:109} INFO - Running <TaskInstance: using_pandas_demo.getDataToLocal manual__2022-11-28T19:01:17.221697+00:00 [running]> on host acb48b0a6e0d
+[2022-11-28 19:06:19,378] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=using_pandas_demo
+AIRFLOW_CTX_TASK_ID=getDataToLocal
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-28T19:01:17.221697+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-28T19:01:17.221697+00:00
+[2022-11-28 19:06:21,421] {python.py:175} INFO - Done. Returned value was: None
+[2022-11-28 19:06:21,461] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=using_pandas_demo, task_id=getDataToLocal, execution_date=20221128T190117, start_date=20221128T190619, end_date=20221128T190621
+[2022-11-28 19:06:21,550] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-28 19:06:21,624] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,22 @@
+[2022-11-29 15:37:01,989] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: vaccine_dags.transformData manual__2022-11-29T15:36:57.380361+00:00 [queued]>
+[2022-11-29 15:37:02,004] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: vaccine_dags.transformData manual__2022-11-29T15:36:57.380361+00:00 [queued]>
+[2022-11-29 15:37:02,005] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29 15:37:02,005] {taskinstance.py:1244} INFO - Starting attempt 1 of 2
+[2022-11-29 15:37:02,005] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29 15:37:02,025] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): transformData> on 2022-11-29 15:36:57.380361+00:00
+[2022-11-29 15:37:02,031] {standard_task_runner.py:52} INFO - Started process 112 to run task
+[2022-11-29 15:37:02,038] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'vaccine_dags', 'transformData', 'manual__2022-11-29T15:36:57.380361+00:00', '--job-id', '1267', '--raw', '--subdir', 'DAGS_FOLDER/vaccine.py', '--cfg-path', '/tmp/tmpe9f_1ma4', '--error-file', '/tmp/tmp_ov2fyxt']
+[2022-11-29 15:37:02,040] {standard_task_runner.py:77} INFO - Job 1267: Subtask transformData
+[2022-11-29 15:37:02,133] {logging_mixin.py:109} INFO - Running <TaskInstance: vaccine_dags.transformData manual__2022-11-29T15:36:57.380361+00:00 [running]> on host acb48b0a6e0d
+[2022-11-29 15:37:02,233] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=vaccine_dags
+AIRFLOW_CTX_TASK_ID=transformData
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-29T15:36:57.380361+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-29T15:36:57.380361+00:00
+[2022-11-29 15:37:02,302] {python.py:175} INFO - Done. Returned value was: None
+[2022-11-29 15:37:02,321] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=vaccine_dags, task_id=transformData, execution_date=20221129T153657, start_date=20221129T153701, end_date=20221129T153702
+[2022-11-29 15:37:02,370] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-29 15:37:02,419] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
