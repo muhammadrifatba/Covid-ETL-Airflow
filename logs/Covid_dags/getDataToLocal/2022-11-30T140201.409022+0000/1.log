@@ -1,0 +1,22 @@
+[2022-11-30 14:02:02,817] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Covid_dags.getDataToLocal manual__2022-11-30T14:02:01.409022+00:00 [queued]>
+[2022-11-30 14:02:02,846] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Covid_dags.getDataToLocal manual__2022-11-30T14:02:01.409022+00:00 [queued]>
+[2022-11-30 14:02:02,846] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30 14:02:02,846] {taskinstance.py:1244} INFO - Starting attempt 1 of 2
+[2022-11-30 14:02:02,847] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30 14:02:02,867] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): getDataToLocal> on 2022-11-30 14:02:01.409022+00:00
+[2022-11-30 14:02:02,873] {standard_task_runner.py:52} INFO - Started process 133 to run task
+[2022-11-30 14:02:02,880] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Covid_dags', 'getDataToLocal', 'manual__2022-11-30T14:02:01.409022+00:00', '--job-id', '1819', '--raw', '--subdir', 'DAGS_FOLDER/covid.py', '--cfg-path', '/tmp/tmpgc_iat2c', '--error-file', '/tmp/tmpr1ux1nke']
+[2022-11-30 14:02:02,882] {standard_task_runner.py:77} INFO - Job 1819: Subtask getDataToLocal
+[2022-11-30 14:02:02,999] {logging_mixin.py:109} INFO - Running <TaskInstance: Covid_dags.getDataToLocal manual__2022-11-30T14:02:01.409022+00:00 [running]> on host acb48b0a6e0d
+[2022-11-30 14:02:03,132] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Covid_dags
+AIRFLOW_CTX_TASK_ID=getDataToLocal
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-30T14:02:01.409022+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-30T14:02:01.409022+00:00
+[2022-11-30 14:02:05,888] {python.py:175} INFO - Done. Returned value was: None
+[2022-11-30 14:02:05,907] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=Covid_dags, task_id=getDataToLocal, execution_date=20221130T140201, start_date=20221130T140202, end_date=20221130T140205
+[2022-11-30 14:02:05,950] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-30 14:02:06,004] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
